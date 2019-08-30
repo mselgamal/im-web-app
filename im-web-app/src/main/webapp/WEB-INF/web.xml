@@ -8,6 +8,7 @@
 
 	<absolute-ordering />
 	
+	<!-- Home page list -->
 	<welcome-file-list>
     	<welcome-file>index.jsp</welcome-file>
     	<welcome-file>index.html</welcome-file>

@@ -4,8 +4,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
-	<title>Login</title>
+<meta charset="UTF-8">
+<title>Login</title>
 </head>
 	<body>
 		<form:form action="${pageContext.request.contextPath}/authenticateUser"

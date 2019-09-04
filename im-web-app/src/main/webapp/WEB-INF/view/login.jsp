@@ -25,23 +25,29 @@
 	<link rel="stylesheet" type="text/css" href="<c:url value="/resources/vendor/select2/select2.min.css"/>"/>
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/util.css"/>">
+<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/main.css"/>">
 <!--===============================================================================================-->
 </head>
 <body>
-	
 	<div class="limiter">
-		<div class="container-login100" style="background-image: url('images/img-01.jpg');">
+		<div class="container-login100" style="background-image: url('resources/images/img-01.jpg');">
 			<div class="wrap-login100 p-t-190 p-b-30">
 				<form:form action="${pageContext.request.contextPath}/authenticateUser"
 			method="POST" class="login100-form validate-form">
 					<div class="login100-form-avatar">
-						<img src="images/avatar-01.jpg" alt="AVATAR">
+						<img src="resources/images/avatar-01.jpg" alt="AVATAR">
 					</div>
 
 					<span class="login100-form-title p-t-20 p-b-45">
 						John Doe
 					</span>
+					
+					<c:if test="${param.error != null}">
+						<div class="p-b-20 p-l-55">
+							<span class="alert alert-danger ">Invalid Username or Password.</span>
+						</div>
+					</c:if>
 
 					<div class="wrap-input100 validate-input m-b-10" data-validate = "Username is required">
 						<input class="input100" type="text" name="username" placeholder="Username">
@@ -81,10 +87,6 @@
 			</div>
 		</div>
 	</div>
-	
-	
-
-	
 <!--===============================================================================================-->	
 	<script src="<c:url value="/resources/vendor/jquery/jquery-3.2.1.min.js"/>"></script>
 <!--===============================================================================================-->
@@ -94,6 +96,5 @@
 	<script src="<c:url value="/resources/vendor/select2/select2.min.js"/>"></script>
 <!--===============================================================================================-->
 	<script src="<c:url value="/resources/js/main.js"/>"></script>
-
 </body>
 </html>

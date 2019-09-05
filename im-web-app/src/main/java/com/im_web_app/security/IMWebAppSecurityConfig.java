@@ -34,6 +34,9 @@ public class IMWebAppSecurityConfig extends WebSecurityConfigurerAdapter {
 				.formLogin()
 				.loginPage("/login")
 				.loginProcessingUrl("/authenticateUser")
+				.permitAll()
+			.and()
+				.logout()
 				.permitAll();
 	}
 }

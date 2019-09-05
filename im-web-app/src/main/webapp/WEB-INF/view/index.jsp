@@ -30,7 +30,8 @@
 						<li><a href="#notifications" data-toggle="tab" role="tab" aria-controls="notifications" aria-selected="false"><i data-eva="bell" data-eva-animation="pulse"></i></a></li>
 						<li><a href="#settings" data-toggle="tab" role="tab" aria-controls="settings" aria-selected="false"><i data-eva="settings" data-eva-animation="pulse"></i></a></li>
 						<li><button type="button" class="btn mode"><i data-eva="bulb" data-eva-animation="pulse"></i></button></li>
-						<li><button type="button" class="btn"><img src="dist/img/avatars/avatar-male-1.jpg" alt="avatar"><i data-eva="radio-button-on"></i></button></li>
+						<li><button type="button" class="btn"><img src="resources/img/avatars/avatar-male-1.jpg" alt="avatar"><i data-eva="radio-button-on"></i></button></li>
+						<li><button type="button" class="btn primary btn-sm">Sign Out</button></li>
 					</ul>
 				</div>
 			</nav>
@@ -58,7 +59,7 @@
 								<ul class="nav discussions" role="tablist">
 									<li>
 										<a href="#chat1" class="filter direct active" data-chat="open" data-toggle="tab" role="tab" aria-controls="chat1" aria-selected="true">
-											<div class="status online"><img src="dist/img/avatars/avatar-male-1.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
+											<div class="status online"><img src="resources/img/avatars/avatar-male-1.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
 											<div class="content">
 												<div class="headline">
 													<h5>Ham Chuwon</h5>
@@ -70,7 +71,7 @@
 									</li>
 									<li>
 										<a href="#chat1" class="filter direct" data-chat="open" data-toggle="tab" role="tab" aria-controls="chat1" aria-selected="false">
-											<div class="status offline"><img src="dist/img/avatars/avatar-male-2.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
+											<div class="status offline"><img src="resources/img/avatars/avatar-male-2.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
 											<div class="content">
 												<div class="headline">
 													<h5>Quincy Hensen</h5>
@@ -82,7 +83,7 @@
 									</li>
 									<li>
 										<a href="#chat1" class="filter direct" data-chat="open" data-toggle="tab" role="tab" aria-controls="chat1" aria-selected="false">
-											<div class="status online"><img src="dist/img/avatars/avatar-male-3.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
+											<div class="status online"><img src="resources/img/avatars/avatar-male-3.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
 											<div class="content">
 												<div class="headline">
 													<h5>Mark Hog</h5>
@@ -94,7 +95,7 @@
 									</li>
 									<li>
 										<a href="#chat1" class="filter direct" data-chat="open" data-toggle="tab" role="tab" aria-controls="chat1" aria-selected="false">
-											<div class="status offline"><img src="dist/img/avatars/avatar-male-4.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
+											<div class="status offline"><img src="resources/img/avatars/avatar-male-4.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
 											<div class="content">
 												<div class="headline">
 													<h5>Sanne Viscaal</h5>
@@ -106,7 +107,7 @@
 									</li>
 									<li>
 										<a href="#chat1" class="filter direct" data-chat="open" data-toggle="tab" role="tab" aria-controls="chat1" aria-selected="false">
-											<div class="status offline"><img src="dist/img/avatars/avatar-male-5.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
+											<div class="status offline"><img src="resources/img/avatars/avatar-male-5.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
 											<div class="content">
 												<div class="headline">
 													<h5>Alex Just</h5>
@@ -120,7 +121,7 @@
 										<a href="#chat2" class="filter groups" data-chat="open" data-toggle="tab" role="tab" aria-controls="chat2" aria-selected="false">
 											<div class="content">
 												<div class="headline">
-													<img src="dist/img/avatars/avatar-group-1.jpg" alt="avatar">
+													<img src="resources/img/avatars/avatar-group-1.jpg" alt="avatar">
 													<h5>The Musketeers</h5>
 													<span>Today</span>
 												</div>
@@ -132,7 +133,7 @@
 										<a href="#chat2" class="filter groups" data-chat="open" data-toggle="tab" role="tab" aria-controls="chat2" aria-selected="false">
 											<div class="content">
 												<div class="headline">
-													<img src="dist/img/avatars/avatar-group-2.jpg" alt="avatar">
+													<img src="resources/img/avatars/avatar-group-2.jpg" alt="avatar">
 													<h5>Watts Up</h5>
 													<span>Today</span>
 												</div>
@@ -144,7 +145,7 @@
 										<a href="#chat2" class="filter groups" data-chat="open" data-toggle="tab" role="tab" aria-controls="chat2" aria-selected="false">
 											<div class="content">
 												<div class="headline">
-													<img src="dist/img/avatars/avatar-group-3.jpg" alt="avatar">
+													<img src="resources/img/avatars/avatar-group-3.jpg" alt="avatar">
 													<h5>Memes</h5>
 													<span>Feb 23</span>
 												</div>
@@ -156,7 +157,7 @@
 										<a href="#chat2" class="filter groups" data-chat="open" data-toggle="tab" role="tab" aria-controls="chat2" aria-selected="false">
 											<div class="content">
 												<div class="headline">
-													<img src="dist/img/avatars/avatar-group-4.jpg" alt="avatar">
+													<img src="resources/img/avatars/avatar-group-4.jpg" alt="avatar">
 													<h5>Supernovas</h5>
 													<span>Jan 18</span>
 												</div>
@@ -168,7 +169,7 @@
 										<a href="#chat2" class="filter groups" data-chat="open" data-toggle="tab" role="tab" aria-controls="chat2" aria-selected="false">
 											<div class="content">
 												<div class="headline">
-													<img src="dist/img/avatars/avatar-group-5.jpg" alt="avatar">
+													<img src="resources/img/avatars/avatar-group-5.jpg" alt="avatar">
 													<h5>Squad Ghouls</h5>
 													<span>May 2</span>
 												</div>
@@ -180,6 +181,7 @@
 							</div>
 						</div>
 						<!-- End of Discussions -->
+
 						<!-- Start of Friends -->
 						<div class="tab-pane fade" id="friends" role="tabpanel">
 							<div class="top">
@@ -194,7 +196,7 @@
 								<ul class="users">
 									<li>
 										<a href="#">
-											<div class="status online"><img src="dist/img/avatars/avatar-male-1.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
+											<div class="status online"><img src="resources/img/avatars/avatar-male-1.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
 											<div class="content">
 												<h5>Ham Chuwon</h5>
 												<span>Florida, US</span>
@@ -204,7 +206,7 @@
 									</li>
 									<li>
 										<a href="#">
-											<div class="status offline"><img src="dist/img/avatars/avatar-male-2.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
+											<div class="status offline"><img src="resources/img/avatars/avatar-male-2.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
 											<div class="content">
 												<h5>Quincy Hensen</h5>
 												<span>Shanghai, China</span>
@@ -214,7 +216,7 @@
 									</li>
 									<li>
 										<a href="#">
-											<div class="status online"><img src="dist/img/avatars/avatar-male-3.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
+											<div class="status online"><img src="resources/img/avatars/avatar-male-3.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
 											<div class="content">
 												<h5>Mark Hog</h5>
 												<span>Olso, Norway</span>
@@ -224,7 +226,7 @@
 									</li>
 									<li>
 										<a href="#">
-											<div class="status offline"><img src="dist/img/avatars/avatar-male-4.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
+											<div class="status offline"><img src="resources/img/avatars/avatar-male-4.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
 											<div class="content">
 												<h5>Sanne Viscaal</h5>
 												<span>Helena, Montana</span>
@@ -234,7 +236,7 @@
 									</li>
 									<li>
 										<a href="#">
-											<div class="status offline"><img src="dist/img/avatars/avatar-male-5.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
+											<div class="status offline"><img src="resources/img/avatars/avatar-male-5.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
 											<div class="content">
 												<h5>Alex Just</h5>
 												<span>London, UK</span>
@@ -244,7 +246,7 @@
 									</li>
 									<li>
 										<a href="#">
-											<div class="status online"><img src="dist/img/avatars/avatar-male-6.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
+											<div class="status online"><img src="resources/img/avatars/avatar-male-6.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
 											<div class="content">
 												<h5>Arturo Thomas</h5>
 												<span>Vienna, Austria</span>
@@ -254,7 +256,7 @@
 									</li>
 									<li>
 										<a href="#">
-											<div class="status offline"><img src="dist/img/avatars/avatar-female-1.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
+											<div class="status offline"><img src="resources/img/avatars/avatar-female-1.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
 											<div class="content">
 												<h5>Victoria Garner</h5>
 												<span>Chisinau, Moldova</span>
@@ -264,7 +266,7 @@
 									</li>
 									<li>
 										<a href="#">
-											<div class="status offline"><img src="dist/img/avatars/avatar-female-2.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
+											<div class="status offline"><img src="resources/img/avatars/avatar-female-2.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
 											<div class="content">
 												<h5>Maria Baron</h5>
 												<span>Indore, India</span>
@@ -274,7 +276,7 @@
 									</li>
 									<li>
 										<a href="#">
-											<div class="status online"><img src="dist/img/avatars/avatar-female-3.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
+											<div class="status online"><img src="resources/img/avatars/avatar-female-3.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
 											<div class="content">
 												<h5>Sara Koch</h5>
 												<span>Sofia, BG</span>
@@ -286,6 +288,7 @@
 							</div>
 						</div>
 						<!-- End of Friends -->
+
 						<!-- Start of Notifications -->
 						<div class="tab-pane fade" id="notifications" role="tabpanel">
 							<div class="top">
@@ -322,12 +325,13 @@
 							</div>
 						</div>
 						<!-- End of Notifications -->
+
 						<!-- Start of Settings -->
 						<div class="settings tab-pane fade" id="settings" role="tabpanel">
 							<div class="user">
 								<label>
 									<input type="file">
-									<img src="dist/img/avatars/avatar-male-1.jpg" alt="avatar">
+									<img src="resources/img/avatars/avatar-male-1.jpg" alt="avatar">
 								</label>
 								<div class="content">
 									<h5>Ham Chuwon</h5>
@@ -602,6 +606,7 @@
 				</div>
 			</div>
 			<!-- End of Sidebar -->
+
 			<!-- Start of Chat -->
 			<div class="chat">
 				<div class="tab-content">
@@ -612,7 +617,7 @@
 								<div class="container">
 									<div class="top">
 										<div class="headline">
-											<img src="dist/img/avatars/avatar-male-3.jpg" alt="avatar">
+											<img src="resources/img/avatars/avatar-male-3.jpg" alt="avatar">
 											<div class="content">
 												<h5>Quincy Hensen</h5>
 												<span>Away</span>
@@ -639,7 +644,7 @@
 									<div class="container">
 										<ul>
 											<li>
-												<img src="dist/img/avatars/avatar-male-3.jpg" alt="avatar">
+												<img src="resources/img/avatars/avatar-male-3.jpg" alt="avatar">
 												<div class="content">
 													<div class="message">
 														<div class="bubble">
@@ -660,7 +665,7 @@
 												</div>
 											</li>
 											<li>
-												<img src="dist/img/avatars/avatar-male-3.jpg" alt="avatar">
+												<img src="resources/img/avatars/avatar-male-3.jpg" alt="avatar">
 												<div class="content">
 													<div class="message">
 														<div class="bubble">
@@ -687,7 +692,7 @@
 												</div>
 											</li>
 											<li>
-												<img src="dist/img/avatars/avatar-male-3.jpg" alt="avatar">
+												<img src="resources/img/avatars/avatar-male-3.jpg" alt="avatar">
 												<div class="content">
 													<div class="message">
 														<div class="bubble">
@@ -735,7 +740,7 @@
 											<hr>
 											<ul class="users">
 												<li>
-													<div class="status online"><img src="dist/img/avatars/avatar-male-1.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
+													<div class="status online"><img src="resources/img/avatars/avatar-male-1.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
 													<div class="content">
 														<h5>Ham Chuwon</h5>
 														<span>Florida, US</span>
@@ -750,7 +755,7 @@
 													</div>
 												</li>
 												<li>
-													<div class="status offline"><img src="dist/img/avatars/avatar-male-2.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
+													<div class="status offline"><img src="resources/img/avatars/avatar-male-2.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
 													<div class="content">
 														<h5>Quincy Hensen</h5>
 														<span>Shanghai, China</span>
@@ -765,7 +770,7 @@
 													</div>
 												</li>
 												<li>
-													<div class="status online"><img src="dist/img/avatars/avatar-male-3.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
+													<div class="status online"><img src="resources/img/avatars/avatar-male-3.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
 													<div class="content">
 														<h5>Mark Hog</h5>
 														<span>Olso, Norway</span>
@@ -780,7 +785,7 @@
 													</div>
 												</li>
 												<li>
-													<div class="status offline"><img src="dist/img/avatars/avatar-male-4.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
+													<div class="status offline"><img src="resources/img/avatars/avatar-male-4.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
 													<div class="content">
 														<h5>Sanne Viscaal</h5>
 														<span>Helena, Montana</span>
@@ -795,7 +800,7 @@
 													</div>
 												</li>
 												<li>
-													<div class="status offline"><img src="dist/img/avatars/avatar-male-5.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
+													<div class="status offline"><img src="resources/img/avatars/avatar-male-5.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
 													<div class="content">
 														<h5>Alex Just</h5>
 														<span>London, UK</span>
@@ -810,7 +815,7 @@
 													</div>
 												</li>
 												<li>
-													<div class="status online"><img src="dist/img/avatars/avatar-male-6.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
+													<div class="status online"><img src="resources/img/avatars/avatar-male-6.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
 													<div class="content">
 														<h5>Arturo Thomas</h5>
 														<span>Vienna, Austria</span>
@@ -840,7 +845,7 @@
 												<li>
 													<ul class="avatars">
 														<li><button class="btn round"><i data-eva="file-text"></i></button></li>
-														<li><a href="#"><img src="dist/img/avatars/avatar-male-1.jpg" alt="avatar"></a></li>
+														<li><a href="#"><img src="resources/img/avatars/avatar-male-1.jpg" alt="avatar"></a></li>
 													</ul>
 													<div class="meta">
 														<a href="#"><h5>workbox.js</h5></a>
@@ -858,7 +863,7 @@
 												<li>
 													<ul class="avatars">
 														<li><button class="btn round"><i data-eva="folder"></i></button></li>
-														<li><a href="#"><img src="dist/img/avatars/avatar-male-2.jpg" alt="avatar"></a></li>
+														<li><a href="#"><img src="resources/img/avatars/avatar-male-2.jpg" alt="avatar"></a></li>
 													</ul>
 													<div class="meta">
 														<a href="#"><h5>bug_report</h5></a>
@@ -876,7 +881,7 @@
 												<li>
 													<ul class="avatars">
 														<li><button class="btn round"><i data-eva="briefcase"></i></button></li>
-														<li><a href="#"><img src="dist/img/avatars/avatar-male-3.jpg" alt="avatar"></a></li>
+														<li><a href="#"><img src="resources/img/avatars/avatar-male-3.jpg" alt="avatar"></a></li>
 													</ul>
 													<div class="meta">
 														<a href="#"><h5>nuget.zip</h5></a>
@@ -894,7 +899,7 @@
 												<li>
 													<ul class="avatars">
 														<li><button class="btn round"><i data-eva="image-2"></i></button></li>
-														<li><a href="#"><img src="dist/img/avatars/avatar-male-4.jpg" alt="avatar"></a></li>
+														<li><a href="#"><img src="resources/img/avatars/avatar-male-4.jpg" alt="avatar"></a></li>
 													</ul>
 													<div class="meta">
 														<a href="#"><h5>clearfix.jpg</h5></a>
@@ -912,7 +917,7 @@
 												<li>
 													<ul class="avatars">
 														<li><button class="btn round"><i data-eva="folder"></i></button></li>
-														<li><a href="#"><img src="dist/img/avatars/avatar-male-5.jpg" alt="avatar"></a></li>
+														<li><a href="#"><img src="resources/img/avatars/avatar-male-5.jpg" alt="avatar"></a></li>
 													</ul>
 													<div class="meta">
 														<a href="#"><h5>package</h5></a>
@@ -930,7 +935,7 @@
 												<li>
 													<ul class="avatars">
 														<li><button class="btn round"><i data-eva="file-text"></i></button></li>
-														<li><a href="#"><img src="dist/img/avatars/avatar-male-6.jpg" alt="avatar"></a></li>
+														<li><a href="#"><img src="resources/img/avatars/avatar-male-6.jpg" alt="avatar"></a></li>
 													</ul>
 													<div class="meta">
 														<a href="#"><h5>plugins.js</h5></a>
@@ -962,7 +967,7 @@
 								<div class="container">
 									<div class="top">
 										<div class="headline">
-											<img src="dist/img/avatars/avatar-group-1.jpg" alt="avatar">
+											<img src="resources/img/avatars/avatar-group-1.jpg" alt="avatar">
 											<div class="content">
 												<h5>The Musketeers</h5>
 												<span>Group discussion</span>
@@ -989,7 +994,7 @@
 									<div class="container">
 										<ul>
 											<li>
-												<img src="dist/img/avatars/avatar-male-3.jpg" alt="avatar">
+												<img src="resources/img/avatars/avatar-male-3.jpg" alt="avatar">
 												<div class="content">
 													<div class="message">
 														<div class="bubble">
@@ -1000,7 +1005,7 @@
 												</div>
 											</li>
 											<li>
-												<img src="dist/img/avatars/avatar-male-5.jpg" alt="avatar">
+												<img src="resources/img/avatars/avatar-male-5.jpg" alt="avatar">
 												<div class="content">
 													<div class="message">
 														<div class="bubble">
@@ -1011,7 +1016,7 @@
 												</div>
 											</li>
 											<li>
-												<img src="dist/img/avatars/avatar-male-3.jpg" alt="avatar">
+												<img src="resources/img/avatars/avatar-male-3.jpg" alt="avatar">
 												<div class="content">
 													<div class="message">
 														<div class="bubble">
@@ -1022,7 +1027,7 @@
 												</div>
 											</li>
 											<li>
-												<img src="dist/img/avatars/avatar-male-5.jpg" alt="avatar">
+												<img src="resources/img/avatars/avatar-male-5.jpg" alt="avatar">
 												<div class="content">
 													<div class="message">
 														<div class="bubble">
@@ -1033,7 +1038,7 @@
 												</div>
 											</li>
 											<li>
-												<img src="dist/img/avatars/avatar-male-3.jpg" alt="avatar">
+												<img src="resources/img/avatars/avatar-male-3.jpg" alt="avatar">
 												<div class="content">
 													<div class="message">
 														<div class="bubble">
@@ -1044,7 +1049,7 @@
 												</div>
 											</li>
 											<li>
-												<img src="dist/img/avatars/avatar-male-5.jpg" alt="avatar">
+												<img src="resources/img/avatars/avatar-male-5.jpg" alt="avatar">
 												<div class="content">
 													<div class="message">
 														<div class="bubble">
@@ -1082,7 +1087,7 @@
 											<hr>
 											<ul class="users">
 												<li>
-													<div class="status online"><img src="dist/img/avatars/avatar-male-1.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
+													<div class="status online"><img src="resources/img/avatars/avatar-male-1.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
 													<div class="content">
 														<h5>Ham Chuwon</h5>
 														<span>Florida, US</span>
@@ -1097,7 +1102,7 @@
 													</div>
 												</li>
 												<li>
-													<div class="status offline"><img src="dist/img/avatars/avatar-male-2.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
+													<div class="status offline"><img src="resources/img/avatars/avatar-male-2.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
 													<div class="content">
 														<h5>Quincy Hensen</h5>
 														<span>Shanghai, China</span>
@@ -1112,7 +1117,7 @@
 													</div>
 												</li>
 												<li>
-													<div class="status online"><img src="dist/img/avatars/avatar-male-3.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
+													<div class="status online"><img src="resources/img/avatars/avatar-male-3.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
 													<div class="content">
 														<h5>Mark Hog</h5>
 														<span>Olso, Norway</span>
@@ -1127,7 +1132,7 @@
 													</div>
 												</li>
 												<li>
-													<div class="status offline"><img src="dist/img/avatars/avatar-male-4.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
+													<div class="status offline"><img src="resources/img/avatars/avatar-male-4.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
 													<div class="content">
 														<h5>Sanne Viscaal</h5>
 														<span>Helena, Montana</span>
@@ -1142,7 +1147,7 @@
 													</div>
 												</li>
 												<li>
-													<div class="status offline"><img src="dist/img/avatars/avatar-male-5.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
+													<div class="status offline"><img src="resources/img/avatars/avatar-male-5.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
 													<div class="content">
 														<h5>Alex Just</h5>
 														<span>London, UK</span>
@@ -1157,7 +1162,7 @@
 													</div>
 												</li>
 												<li>
-													<div class="status online"><img src="dist/img/avatars/avatar-male-6.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
+													<div class="status online"><img src="resources/img/avatars/avatar-male-6.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
 													<div class="content">
 														<h5>Arturo Thomas</h5>
 														<span>Vienna, Austria</span>
@@ -1187,7 +1192,7 @@
 												<li>
 													<ul class="avatars">
 														<li><button class="btn round"><i data-eva="file-text"></i></button></li>
-														<li><a href="#"><img src="dist/img/avatars/avatar-male-1.jpg" alt="avatar"></a></li>
+														<li><a href="#"><img src="resources/img/avatars/avatar-male-1.jpg" alt="avatar"></a></li>
 													</ul>
 													<div class="meta">
 														<a href="#"><h5>workbox.js</h5></a>
@@ -1205,7 +1210,7 @@
 												<li>
 													<ul class="avatars">
 														<li><button class="btn round"><i data-eva="folder"></i></button></li>
-														<li><a href="#"><img src="dist/img/avatars/avatar-male-2.jpg" alt="avatar"></a></li>
+														<li><a href="#"><img src="resources/img/avatars/avatar-male-2.jpg" alt="avatar"></a></li>
 													</ul>
 													<div class="meta">
 														<a href="#"><h5>bug_report</h5></a>
@@ -1223,7 +1228,7 @@
 												<li>
 													<ul class="avatars">
 														<li><button class="btn round"><i data-eva="briefcase"></i></button></li>
-														<li><a href="#"><img src="dist/img/avatars/avatar-male-3.jpg" alt="avatar"></a></li>
+														<li><a href="#"><img src="resources/img/avatars/avatar-male-3.jpg" alt="avatar"></a></li>
 													</ul>
 													<div class="meta">
 														<a href="#"><h5>nuget.zip</h5></a>
@@ -1241,7 +1246,7 @@
 												<li>
 													<ul class="avatars">
 														<li><button class="btn round"><i data-eva="image-2"></i></button></li>
-														<li><a href="#"><img src="dist/img/avatars/avatar-male-4.jpg" alt="avatar"></a></li>
+														<li><a href="#"><img src="resources/img/avatars/avatar-male-4.jpg" alt="avatar"></a></li>
 													</ul>
 													<div class="meta">
 														<a href="#"><h5>clearfix.jpg</h5></a>
@@ -1259,7 +1264,7 @@
 												<li>
 													<ul class="avatars">
 														<li><button class="btn round"><i data-eva="folder"></i></button></li>
-														<li><a href="#"><img src="dist/img/avatars/avatar-male-5.jpg" alt="avatar"></a></li>
+														<li><a href="#"><img src="resources/img/avatars/avatar-male-5.jpg" alt="avatar"></a></li>
 													</ul>
 													<div class="meta">
 														<a href="#"><h5>package</h5></a>
@@ -1277,7 +1282,7 @@
 												<li>
 													<ul class="avatars">
 														<li><button class="btn round"><i data-eva="file-text"></i></button></li>
-														<li><a href="#"><img src="dist/img/avatars/avatar-male-6.jpg" alt="avatar"></a></li>
+														<li><a href="#"><img src="resources/img/avatars/avatar-male-6.jpg" alt="avatar"></a></li>
 													</ul>
 													<div class="meta">
 														<a href="#"><h5>plugins.js</h5></a>
@@ -1305,6 +1310,7 @@
 				</div>
 			</div>
 			<!-- End of Chat -->
+
 			<!-- Start of Compose -->
 			<div class="modal fade" id="compose" tabindex="-1" role="dialog" aria-labelledby="compose" aria-hidden="true">
 				<div class="modal-dialog modal-dialog-centered" role="document">
@@ -1347,7 +1353,7 @@
 									<hr>
 									<ul class="users">
 										<li>
-											<div class="status online"><img src="dist/img/avatars/avatar-male-1.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
+											<div class="status online"><img src="resources/img/avatars/avatar-male-1.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
 											<div class="content">
 												<h5>Ham Chuwon</h5>
 												<span>Florida, US</span>
@@ -1358,7 +1364,7 @@
 											</div>
 										</li>
 										<li>
-											<div class="status offline"><img src="dist/img/avatars/avatar-male-2.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
+											<div class="status offline"><img src="resources/img/avatars/avatar-male-2.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
 											<div class="content">
 												<h5>Quincy Hensen</h5>
 												<span>Shanghai, China</span>
@@ -1369,7 +1375,7 @@
 											</div>
 										</li>
 										<li>
-											<div class="status online"><img src="dist/img/avatars/avatar-male-3.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
+											<div class="status online"><img src="resources/img/avatars/avatar-male-3.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
 											<div class="content">
 												<h5>Mark Hog</h5>
 												<span>Olso, Norway</span>
@@ -1380,7 +1386,7 @@
 											</div>
 										</li>
 										<li>
-											<div class="status offline"><img src="dist/img/avatars/avatar-male-4.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
+											<div class="status offline"><img src="resources/img/avatars/avatar-male-4.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
 											<div class="content">
 												<h5>Sanne Viscaal</h5>
 												<span>Helena, Montana</span>
@@ -1391,7 +1397,7 @@
 											</div>
 										</li>
 										<li>
-											<div class="status offline"><img src="dist/img/avatars/avatar-male-5.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
+											<div class="status offline"><img src="resources/img/avatars/avatar-male-5.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
 											<div class="content">
 												<h5>Alex Just</h5>
 												<span>London, UK</span>
@@ -1402,7 +1408,7 @@
 											</div>
 										</li>
 										<li>
-											<div class="status online"><img src="dist/img/avatars/avatar-male-6.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
+											<div class="status online"><img src="resources/img/avatars/avatar-male-6.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
 											<div class="content">
 												<h5>Arturo Thomas</h5>
 												<span>Vienna, Austria</span>
@@ -1413,7 +1419,7 @@
 											</div>
 										</li>
 										<li>
-											<div class="status offline"><img src="dist/img/avatars/avatar-female-1.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
+											<div class="status offline"><img src="resources/img/avatars/avatar-female-1.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
 											<div class="content">
 												<h5>Victoria Garner</h5>
 												<span>Chisinau, Moldova</span>
@@ -1424,7 +1430,7 @@
 											</div>
 										</li>
 										<li>
-											<div class="status offline"><img src="dist/img/avatars/avatar-female-2.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
+											<div class="status offline"><img src="resources/img/avatars/avatar-female-2.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
 											<div class="content">
 												<h5>Maria Baron</h5>
 												<span>Indore, India</span>
@@ -1435,7 +1441,7 @@
 											</div>
 										</li>
 										<li>
-											<div class="status online"><img src="dist/img/avatars/avatar-female-3.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
+											<div class="status online"><img src="resources/img/avatars/avatar-female-3.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
 											<div class="content">
 												<h5>Sara Koch</h5>
 												<span>Sofia, BG</span>
@@ -1457,6 +1463,7 @@
 				</div>
 			</div>
 			<!-- End of Compose -->
+			
 		</div>
 		<!-- Layout -->
 		<script src="<c:url value="/resources/js/vendor/jquery-slim.min.js"/>"></script>

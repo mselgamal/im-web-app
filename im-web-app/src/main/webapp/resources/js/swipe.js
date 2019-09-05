@@ -12,7 +12,7 @@ $(document).ready(function() {
 	clicked = true;
 	$(".mode").click(function() {
 		if(clicked){
-			$('head').append('<link href="dist/css/dark.min.css" id="dark" type="text/css" rel="stylesheet">');
+			$('head').append('<link href="/im-web-app/resources/css/dark.min.css" id="dark" type="text/css" rel="stylesheet">');
 			clicked  = false;
 		}
 		else {

@@ -26,7 +26,8 @@ public class IMWebAppSecurityConfig extends WebSecurityConfigurerAdapter {
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		
-		// setup authentication to different login page
+		// setup authentication to login page and allow logout
+		// do not require authentication to resources
 		http.authorizeRequests()
 			.antMatchers("/resources/**").permitAll()
 			.anyRequest().authenticated()

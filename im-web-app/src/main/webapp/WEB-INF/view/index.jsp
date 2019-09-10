@@ -7,7 +7,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Swipe â The Simplest Chat Platform</title>
+		<title>Simple Chat App</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta name="description" content="#">
 		<!-- Bootstrap core CSS -->
@@ -31,7 +31,12 @@
 						<li><a href="#settings" data-toggle="tab" role="tab" aria-controls="settings" aria-selected="false"><i data-eva="settings" data-eva-animation="pulse"></i></a></li>
 						<li><button type="button" class="btn mode"><i data-eva="bulb" data-eva-animation="pulse"></i></button></li>
 						<li><button type="button" class="btn"><img src="resources/img/avatars/avatar-male-1.jpg" alt="avatar"><i data-eva="radio-button-on"></i></button></li>
-						<li><button type="button" class="btn primary btn-sm">Sign Out</button></li>
+						<li>
+							<form:form action="${pageContext.request.contextPath}/signout" 
+								method="POST">
+									<button type="submit" value="signout" class="btn primary btn-sm">Sign Out</button>
+							</form:form>
+						</li>
 					</ul>
 				</div>
 			</nav>

@@ -28,6 +28,11 @@
 								<span class="alert alert-danger ">Invalid Username or Password.</span>
 							</div>
 						</c:if>
+						<c:if test="${param.signout != null}">
+							<div>
+								<span class="alert alert-success ">You Have Been Logged Out.</span>
+							</div>
+						</c:if>
 						<div class="form-group">
 							<input type="text" class="form-control" placeholder="Username" name="username" required autofocus>
 							<button class="btn prepend"><i data-eva="person"></i></button>

@@ -32,9 +32,9 @@
 						<li><button type="button" class="btn mode"><i data-eva="bulb" data-eva-animation="pulse"></i></button></li>
 						<li><button type="button" class="btn"><img src="resources/img/avatars/avatar-male-1.jpg" alt="avatar"><i data-eva="radio-button-on"></i></button></li>
 						<li>
-							<form:form action="${pageContext.request.contextPath}/signout" 
+							<form:form action="${pageContext.request.contextPath}/logout" 
 								method="POST">
-									<button type="submit" value="signout" class="btn primary btn-sm">Sign Out</button>
+									<button type="submit" value="logout" class="btn primary btn-sm">Sign Out</button>
 							</form:form>
 						</li>
 					</ul>
@@ -71,102 +71,6 @@
 													<span>Today</span>
 												</div>
 												<p>Please review and sign the binding agreement.</p>
-											</div>
-										</a>
-									</li>
-									<li>
-										<a href="#chat1" class="filter direct" data-chat="open" data-toggle="tab" role="tab" aria-controls="chat1" aria-selected="false">
-											<div class="status offline"><img src="resources/img/avatars/avatar-male-2.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
-											<div class="content">
-												<div class="headline">
-													<h5>Quincy Hensen</h5>
-													<span>Today</span>
-												</div>
-												<p>Additional information about the previous clients.</p>
-											</div>
-										</a>
-									</li>
-									<li>
-										<a href="#chat1" class="filter direct" data-chat="open" data-toggle="tab" role="tab" aria-controls="chat1" aria-selected="false">
-											<div class="status online"><img src="resources/img/avatars/avatar-male-3.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
-											<div class="content">
-												<div class="headline">
-													<h5>Mark Hog</h5>
-													<span>Feb 23</span>
-												</div>
-												<p>I'm looking to get a quote for the move from LA to NY.</p>
-											</div>
-										</a>
-									</li>
-									<li>
-										<a href="#chat1" class="filter direct" data-chat="open" data-toggle="tab" role="tab" aria-controls="chat1" aria-selected="false">
-											<div class="status offline"><img src="resources/img/avatars/avatar-male-4.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
-											<div class="content">
-												<div class="headline">
-													<h5>Sanne Viscaal</h5>
-													<span>Jan 18</span>
-												</div>
-												<p>My delivery address is pending final confirmation.</p>
-											</div>
-										</a>
-									</li>
-									<li>
-										<a href="#chat1" class="filter direct" data-chat="open" data-toggle="tab" role="tab" aria-controls="chat1" aria-selected="false">
-											<div class="status offline"><img src="resources/img/avatars/avatar-male-5.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
-											<div class="content">
-												<div class="headline">
-													<h5>Alex Just</h5>
-													<span>May 2</span>
-												</div>
-												<p>Sending all the requested insurance documents.</p>
-											</div>
-										</a>
-									</li>
-									<li>
-										<a href="#chat2" class="filter groups" data-chat="open" data-toggle="tab" role="tab" aria-controls="chat2" aria-selected="false">
-											<div class="content">
-												<div class="headline">
-													<img src="resources/img/avatars/avatar-group-1.jpg" alt="avatar">
-													<h5>The Musketeers</h5>
-													<span>Today</span>
-												</div>
-												<p>Please review and sign the binding agreement.</p>
-											</div>
-										</a>
-									</li>
-									<li>
-										<a href="#chat2" class="filter groups" data-chat="open" data-toggle="tab" role="tab" aria-controls="chat2" aria-selected="false">
-											<div class="content">
-												<div class="headline">
-													<img src="resources/img/avatars/avatar-group-2.jpg" alt="avatar">
-													<h5>Watts Up</h5>
-													<span>Today</span>
-												</div>
-												<p>Additional information about the previous clients.</p>
-											</div>
-										</a>
-									</li>
-									<li>
-										<a href="#chat2" class="filter groups" data-chat="open" data-toggle="tab" role="tab" aria-controls="chat2" aria-selected="false">
-											<div class="content">
-												<div class="headline">
-													<img src="resources/img/avatars/avatar-group-3.jpg" alt="avatar">
-													<h5>Memes</h5>
-													<span>Feb 23</span>
-												</div>
-												<p>I'm looking to get a quote for the move from LA to NY.</p>
-											</div>
-										</a>
-									</li>
-									<li>
-										<a href="#chat2" class="filter groups" data-chat="open" data-toggle="tab" role="tab" aria-controls="chat2" aria-selected="false">
-											<div class="content">
-												<div class="headline">
-													<img src="resources/img/avatars/avatar-group-4.jpg" alt="avatar">
-													<h5>Supernovas</h5>
-													<span>Jan 18</span>
-												</div>
-												<p>My delivery address is pending final confirmation.</p>
 											</div>
 										</a>
 									</li>
@@ -211,77 +115,7 @@
 									</li>
 									<li>
 										<a href="#">
-											<div class="status offline"><img src="resources/img/avatars/avatar-male-2.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
-											<div class="content">
-												<h5>Quincy Hensen</h5>
-												<span>Shanghai, China</span>
-											</div>
-											<div class="icon"><i data-eva="person"></i></div>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<div class="status online"><img src="resources/img/avatars/avatar-male-3.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
-											<div class="content">
-												<h5>Mark Hog</h5>
-												<span>Olso, Norway</span>
-											</div>
-											<div class="icon"><i data-eva="person"></i></div>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<div class="status offline"><img src="resources/img/avatars/avatar-male-4.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
-											<div class="content">
-												<h5>Sanne Viscaal</h5>
-												<span>Helena, Montana</span>
-											</div>
-											<div class="icon"><i data-eva="person"></i></div>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<div class="status offline"><img src="resources/img/avatars/avatar-male-5.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
-											<div class="content">
-												<h5>Alex Just</h5>
-												<span>London, UK</span>
-											</div>
-											<div class="icon"><i data-eva="person"></i></div>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<div class="status online"><img src="resources/img/avatars/avatar-male-6.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
-											<div class="content">
-												<h5>Arturo Thomas</h5>
-												<span>Vienna, Austria</span>
-											</div>
-											<div class="icon"><i data-eva="person"></i></div>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<div class="status offline"><img src="resources/img/avatars/avatar-female-1.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
-											<div class="content">
-												<h5>Victoria Garner</h5>
-												<span>Chisinau, Moldova</span>
-											</div>
-											<div class="icon"><i data-eva="person"></i></div>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<div class="status offline"><img src="resources/img/avatars/avatar-female-2.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
-											<div class="content">
-												<h5>Maria Baron</h5>
-												<span>Indore, India</span>
-											</div>
-											<div class="icon"><i data-eva="person"></i></div>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<div class="status online"><img src="resources/img/avatars/avatar-female-3.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
+											<div class="status offline"><img src="resources/img/avatars/avatar-female-3.jpg" alt="avatar"><i data-eva="radio-button-on"></i></div>
 											<div class="content">
 												<h5>Sara Koch</h5>
 												<span>Sofia, BG</span>
@@ -629,8 +463,9 @@
 											</div>
 										</div>
 										<ul>
+											<!-- Video And Audio Not Implemented
 											<li><button type="button" class="btn"><i data-eva="video" data-eva-animation="pulse"></i></button></li>
-											<li><button type="button" class="btn"><i data-eva="phone" data-eva-animation="pulse"></i></button></li>
+											<li><button type="button" class="btn"><i data-eva="phone" data-eva-animation="pulse"></i></button></li> -->
 											<li><button type="button" class="btn" data-toggle="modal" data-target="#compose"><i data-eva="person-add" data-eva-animation="pulse"></i></button></li>
 											<li><button type="button" class="btn" data-utility="open"><i data-eva="info" data-eva-animation="pulse"></i></button></li>
 											<li><button type="button" class="btn round" data-chat="open"><i data-eva="arrow-ios-back"></i></button></li>

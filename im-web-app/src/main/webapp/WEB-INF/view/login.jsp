@@ -28,7 +28,7 @@
 								<span class="alert alert-danger ">Invalid Username or Password.</span>
 							</div>
 						</c:if>
-						<c:if test="${param.signout != null}">
+						<c:if test="${param.logout != null}">
 							<div>
 								<span class="alert alert-success ">You Have Been Logged Out.</span>
 							</div>

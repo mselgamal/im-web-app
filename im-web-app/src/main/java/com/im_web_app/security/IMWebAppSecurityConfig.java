@@ -14,13 +14,13 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 public class IMWebAppSecurityConfig extends WebSecurityConfigurerAdapter {
 
 	@Autowired
-	private DataSource securityDataSource;
+	private DataSource dataSource;
 	
 	@Override
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
 		
 		// db authentication
-		auth.jdbcAuthentication().dataSource(securityDataSource);
+		auth.jdbcAuthentication().dataSource(dataSource);
 		
 		// temp in-memmory authentication for testing
 		/*

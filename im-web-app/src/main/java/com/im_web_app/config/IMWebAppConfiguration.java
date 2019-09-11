@@ -2,16 +2,20 @@ package com.im_web_app.config;
 
 
 import java.beans.PropertyVetoException;
+import java.util.Properties;
 import java.util.logging.Logger;
 
 import javax.sql.DataSource;
 
+import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.core.env.Environment;
+import org.springframework.orm.hibernate5.HibernateTransactionManager;
+import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
@@ -34,13 +38,13 @@ public class IMWebAppConfiguration implements WebMvcConfigurer{
 	
 	// db connection setup
 	@Bean
-	public DataSource securityDataSource() {
+	public DataSource dataSource() {
 		// create connection pool
-		ComboPooledDataSource securityDataSource = new ComboPooledDataSource();
+		ComboPooledDataSource dataSource = new ComboPooledDataSource();
 		
 		// set jdbc driver
 		try {
-			securityDataSource.setDriverClass(env.getProperty("jdbc.driver"));
+			dataSource.setDriverClass(env.getProperty("jdbc.driver"));
 		} catch (PropertyVetoException exc) {
 			throw new RuntimeException(exc);
 		}
@@ -49,21 +53,44 @@ public class IMWebAppConfiguration implements WebMvcConfigurer{
 		logger.info(">>> JDBC.user: " + env.getProperty("jdbc.user"));
 		
 		// set database connection properties
-		securityDataSource.setJdbcUrl(env.getProperty("jdbc.url"));
-		securityDataSource.setUser(env.getProperty("jdbc.user"));
-		securityDataSource.setPassword(env.getProperty("jdbc.password"));
+		dataSource.setJdbcUrl(env.getProperty("jdbc.url"));
+		dataSource.setUser(env.getProperty("jdbc.user"));
+		dataSource.setPassword(env.getProperty("jdbc.password"));
 		
 		// set connection pool props
-		securityDataSource.setInitialPoolSize(Integer.parseInt(
+		dataSource.setInitialPoolSize(Integer.parseInt(
 				env.getProperty("connection.pool.initialPoolSize")));
-		securityDataSource.setMinPoolSize(Integer.parseInt(
+		dataSource.setMinPoolSize(Integer.parseInt(
 				env.getProperty("connection.pool.minPoolSize")));
-		securityDataSource.setMaxPoolSize(Integer.parseInt(
+		dataSource.setMaxPoolSize(Integer.parseInt(
 				env.getProperty("connection.pool.maxPoolSize")));
-		securityDataSource.setMaxIdleTime(Integer.parseInt(
+		dataSource.setMaxIdleTime(Integer.parseInt(
 				env.getProperty("connection.pool.maxIdleTime")));
 		
-		return securityDataSource;
+		return dataSource;
+	}
+	
+	// sesssion factory
+	@Bean
+	@Autowired
+	public LocalSessionFactoryBean sessionFactory(HibernateConfig config, DataSource dataSource) {
+		Properties hibernateProp = new Properties();
+		hibernateProp.setProperty("hibernate.dialect", config.getDialect());
+		hibernateProp.setProperty("hibernate.show_sql", String.valueOf(config.isShowSql()));
+		
+		LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
+		sessionFactory.setDataSource(dataSource);
+		sessionFactory.setHibernateProperties(hibernateProp);
+		sessionFactory.setPackagesToScan(new String[] {"com.im_web_app.entity"});
+		
+		return sessionFactory;		
+	}
+	
+	// transaction manager
+	@Bean
+	@Autowired
+	public HibernateTransactionManager transactionManager(SessionFactory sessionFactory) {
+		return new HibernateTransactionManager(sessionFactory);
 	}
 	
 	// view resolver

@@ -21,7 +21,8 @@
 		<div class="sign">
 			<div class="container">
 				<div class="item">
-					<form:form action="${pageContext.request.contextPath}/authenticateUser" method="POST">
+					<form:form action="${pageContext.request.contextPath}/authenticateUser" 
+					method="POST">
 						<h2>Login</h2>
 						<c:if test="${param.error != null}">
 							<div>
@@ -43,7 +44,10 @@
 						</div>
 						<a href="#">Forgot Password?</a>
 						<button type="submit" class="btn primary">Sign In</button>
-						<span>Don't have account? <a href="#">Create Account.</a></span>
+						<span>Don't have account? 
+							<a href="${pageContext.request.contextPath}/registration/registerForm" 
+							role="button">Create Account.</a>
+						</span>
 					</form:form>
 				</div>
 			</div>

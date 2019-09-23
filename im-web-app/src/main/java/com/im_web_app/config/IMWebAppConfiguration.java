@@ -22,6 +22,8 @@ import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
+import com.im_web_app.entity.Role;
+import com.im_web_app.entity.User;
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 
 @Configuration
@@ -79,6 +81,7 @@ public class IMWebAppConfiguration implements WebMvcConfigurer{
 		hibernateProp.setProperty("hibernate.show_sql", String.valueOf(config.isShowSql()));
 		
 		LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
+		sessionFactory.setAnnotatedClasses(Role.class, User.class);
 		sessionFactory.setDataSource(dataSource);
 		sessionFactory.setHibernateProperties(hibernateProp);
 		sessionFactory.setPackagesToScan(new String[] {"com.im_web_app.entity"});

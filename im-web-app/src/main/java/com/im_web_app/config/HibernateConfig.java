@@ -14,6 +14,9 @@ public class HibernateConfig {
 	@Value("${hibernate.show_sql}")
 	private boolean showSql;
 
+	@Value("${hibernate.packagesToScan}")
+	private String packagesToScan;
+	
 	public String getDialect() {
 		return dialect;
 	}
@@ -28,5 +31,13 @@ public class HibernateConfig {
 
 	public void setShowSql(boolean showSql) {
 		this.showSql = showSql;
+	}
+
+	public String getPackagesToScan() {
+		return packagesToScan;
+	}
+
+	public void setPackagesToScan(String packagesToScan) {
+		this.packagesToScan = packagesToScan;
 	}
 }

@@ -7,6 +7,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 import javax.validation.Constraint;
+import javax.validation.Payload;
 
 @Constraint(validatedBy=FieldMatchValidator.class)
 @Target(ElementType.FIELD)
@@ -14,6 +15,8 @@ import javax.validation.Constraint;
 @Documented
 public @interface FieldMatch {
 	public String message();
+	Class<?>[] groups() default {};
+	Class<? extends Payload>[] payload() default {};
 	
 	String first();
     String second();

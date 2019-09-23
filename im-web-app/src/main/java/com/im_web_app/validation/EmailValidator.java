@@ -11,8 +11,8 @@ public class EmailValidator implements ConstraintValidator<ValidEmail, String>{
 	 * email format:
 	 * 	- recipient@domain.xx
 	 */
-	private String regexPattern = "^[\\\\w!#$%&’*+/=?`{|}~^-]+(?:\\\\.[\\\\w!#$%&’*+/=?`{|}~^-]+)*"
-			+ "@(?:[a-zA-Z0-9-]+\\\\.)+[a-zA-Z]{2,6}$";
+	private String regexPattern = "^[a-zA-Z0-9_!#$%&’*+/=?`{|}~^-]+("
+			+ "?:\\.[a-zA-Z0-9_!#$%&’*+/=?`{|}~^-]+)*@[a-zA-Z0-9-]+(?:\\.[a-zA-Z0-9-]+)*$";
 	
 	@Override
 	public boolean isValid(String email, ConstraintValidatorContext context) {
@@ -21,6 +21,8 @@ public class EmailValidator implements ConstraintValidator<ValidEmail, String>{
 		
 		if (email == null) return false;
 		
+		System.out.println(email);
+		System.out.println("checking format");
 		return pattern.matcher(email).matches();
 	}
 

@@ -6,10 +6,15 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 import javax.validation.Constraint;
+import javax.validation.Payload;
 
 @Constraint(validatedBy = NameValidator.class)
 @Target({ElementType.FIELD})
 @Retention(RetentionPolicy.RUNTIME)
 public @interface ValidName {
 	public String message() default "Invalid Name";
+
+	Class<?>[] groups() default {};
+	
+	Class<? extends Payload>[] payload() default {};
 }

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="utf-8">
+		<title>Sign Up</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Bootstrap core CSS -->
+		<link th:href="@{/css/lib/bootstrap.min.css}" rel="stylesheet">
+		<!-- Swipe core CSS -->
+		<link th:href="@{/css/swipe.min.css}" rel="stylesheet">
+		<!-- Favicon -->
+		<link th:href="@{/img/favicon.png}" rel="icon">
+	</head>
+	<body>
+		<!-- Start of Sign Up -->
+		<div class="sign">
+			<div class="container">
+				<div class="item">
+					<form th:action="@{/registration/registerUser}" 
+					th:object="${chatUser}" method="POST">
+						<h2>Sign Up</h2>
+						
+						<div th:if="${error} != null" class="form-group">
+							<span style="white-space: pre-line" class="alert alert-danger" 
+							th:text="${error}"></span>
+						</div>
+						
+						<div class="form-group">
+							<input class="form-control" th:field="*{firstName}" placeholder="Firstname" required/>
+							<button class="btn prepend" disabled="true"><i data-eva="person"></i></button>
+						</div>
+						<div class="form-group">
+							<input class="form-control" th:field="*{lastName}" placeholder="Lastname" required/>
+							<button class="btn prepend" disabled="true"><i data-eva="person"></i></button>
+						</div>
+						<div class="form-group">
+							<input class="form-control" th:field="*{email}" placeholder="Email Address" required/>
+							<button class="btn prepend" disabled="true"><i data-eva="email"></i></button>
+						</div>
+						<div class="form-group">
+							<input class="form-control" th:field="*{userName}" placeholder="Username" required/>
+							<button class="btn prepend" disabled="true"><i data-eva="person"></i></button>
+						</div>
+						<div class="form-group">
+							<input type="password" class="form-control" th:field="*{password}" 
+							placeholder="Password" required/>
+							<button class="btn prepend" disabled="true"><i data-eva="lock"></i></button>
+						</div>
+						<div class="form-group">
+							<input type="password" class="form-control" th:field="*{matchingPassword}" 
+							placeholder="Re-enter Password" required/>
+							<button class="btn prepend" disabled="true"><i data-eva="lock"></i></button>
+						</div>
+						<button type="submit" class="btn primary">Create account</button>
+						<span>Already a member? 
+							<a th:href="@{/login.html}">Sign In.</a>
+						</span>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- End of Sign Up -->
+		<!-- End of Sign In -->
+		<script th:src="@{/js/vendor/jquery-slim.min.js}"></script>
+		<script th:src="@{/js/vendor/popper.min.js}"></script>
+		<script th:src="@{/js/vendor/feather.min.js}"></script>
+		<script th:src="@{/js/vendor/eva.min.js}"></script>
+		<script th:src="@{/js/vendor/bootstrap.min.js}"></script>
+		<script th:src="@{/js/swipe.min.js}"></script>
+	</body>
+</html>																																																						

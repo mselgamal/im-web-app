@@ -12,35 +12,35 @@ import com.im_web_app.validation.ValidUsername;
 @FieldMatch.List(value = { @FieldMatch(first = "password", 
 	second = "matchingPassword", message = "The password fields must match") })
 public class ChatUser {
-
-	@ValidUsername
-	@NotNull(message="Username is required")
-	@Size(min=8, max=50, message="Username - Invalid number of characters")
-	private String userName;
 	
-	@ValidPassword
-	@NotNull(message="Password is required")
-	@Size(min=7, max=60, message="Password - Invalid number of characters")
-	private String password;
-	
-	@NotNull(message="Re-enter password is required")
-	@Size(min=7, max=60, message="Re-enter Password - Invalid number of characters")
-	private String matchingPassword;
-	
-	@ValidName(message="Invalid firstName, Alphabets only")
-	@NotNull(message="Firstname - is required")
-	@Size(min=7, max=60, message="Firstname - Invalid number of characters")
+	@ValidName(message="{error.firstname.validname}")
+	@NotNull(message="{error.firstname.notnull}")
+	@Size(min=2, max=60, message="{error.firstname.size}")
 	private String firstName;
 	
-	@ValidName(message="Invalid lastName, Alphabets only")
-	@NotNull(message="Lastname - is required")
-	@Size(min=7, max=60, message="lastname - Invalid number of characters")
+	@ValidName(message="{error.lastname.validname}")
+	@NotNull(message="{error.lastname.notnull}")
+	@Size(min=2, max=60, message="{error.lastname.size}")
 	private String lastName;
 	
-	@ValidEmail
-	@NotNull(message="Email - is required")
-	@Size(min=7, max=60, message="email - Invalid number of characters")
+	@ValidEmail(message="{error.email.validemail}")
+	@NotNull(message="error.email.notnull")
+	@Size(min=7, max=60, message="{error.email.size}")
 	private String email;
+	
+	@ValidUsername(message="{error.username.validusername}")
+	@NotNull(message="{error.username.notnull}")
+	@Size(min=5, max=50, message="{error.username.size}")
+	private String userName;
+	
+	@ValidPassword(message="{error.password.validpassword}")
+	@NotNull(message="{error.password.notnull}")
+	@Size(min=7, max=60, message="{error.password.size}")
+	private String password;
+	
+	@NotNull(message="{error.matchingpassword.notnull}")
+	@Size(min=7, max=60, message="{error.matchingpassword.size}")
+	private String matchingPassword;
 	
 	public ChatUser() {}
 

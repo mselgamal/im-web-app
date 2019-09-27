@@ -15,6 +15,9 @@ public class UsernameValidator implements ConstraintValidator<ValidUsername, Str
 	@Autowired
 	private UserServiceImpl userService;
 	
+	@Autowired
+	private Messages messages;
+	
 	/**
 	 * username requirements:
 	 * 	- min 8 characters, max 50
@@ -25,21 +28,20 @@ public class UsernameValidator implements ConstraintValidator<ValidUsername, Str
 	
 	@Override
 	public boolean isValid(String username, ConstraintValidatorContext context) {
-		User user = this.userService.find(username);
-		
-		context.disableDefaultConstraintViolation();
+		User user = this.userService.findByUserName(username);
+		String errorMessageCode = null;
 		
 		if (user != null) {
-			context.buildConstraintViolationWithTemplate("{com.im_web_app.validation."
-					+ "usernameAlreadyExists}").addConstraintViolation();
+			context.disableDefaultConstraintViolation();
+			errorMessageCode = "error.username.usernameAlreadyExists";
+			context.buildConstraintViolationWithTemplate(messages.getMessage(errorMessageCode))
+				.addConstraintViolation();
 			return false;
 		}
 		
 		Pattern pattern = Pattern.compile(regex);
 		
 		if (!pattern.matcher(username).matches()) {
-			context.buildConstraintViolationWithTemplate("{com.im_web_app.validation."
-					+ "invalidUsername}").addConstraintViolation();
 			return false;
 		}
 		

@@ -12,7 +12,7 @@ import javax.validation.Payload;
 @Target({ElementType.FIELD})
 @Retention(RetentionPolicy.RUNTIME)
 public @interface ValidName {
-	public String message() default "Invalid Name";
+	public String message();
 
 	Class<?>[] groups() default {};
 	

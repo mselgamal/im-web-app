@@ -14,16 +14,17 @@ public class PasswordValidator implements ConstraintValidator<ValidPassword, Str
 	 *  - supported special characters: !#$%&*
 	 *  - min 8 characters length, max 62 characters
 	 */
-	private String regexPattern = "[A-Z]{1}[0-9]{1}[a-zA-Z0-9!#$%&*]{6,60}";
+	private String regexPattern = "((?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%&]).{6,60})";
 	
 	@Override
 	public boolean isValid(String password, ConstraintValidatorContext context) {
-		
 		Pattern pattern = Pattern.compile(regexPattern);
+		boolean result = false;
 		
 		if (password == null) return false;
 		
-		return pattern.matcher(password).matches();
+		result = pattern.matcher(password).matches();
+		return result;
 	}
 
 }

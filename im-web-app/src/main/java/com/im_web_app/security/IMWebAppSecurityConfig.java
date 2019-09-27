@@ -1,7 +1,5 @@
 package com.im_web_app.security;
 
-import javax.sql.DataSource;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -12,17 +10,17 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
-import com.im_web_app.service.UserServiceImpl;
+import com.im_web_app.service.UserService;
 
 @Configuration
 @EnableWebSecurity
 public class IMWebAppSecurityConfig extends WebSecurityConfigurerAdapter {
-
-	@Autowired
-	private DataSource dataSource;
 	
 	@Autowired
-	private UserServiceImpl userService;
+	private UserService userService;
+	
+	@Autowired
+	private CustomAuthSuccessHandler successHandler;
 	
 	@Bean
 	public BCryptPasswordEncoder passwordEncoder() {
@@ -40,7 +38,7 @@ public class IMWebAppSecurityConfig extends WebSecurityConfigurerAdapter {
 	@Override
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception {		
 		// db authentication
-		auth.jdbcAuthentication().dataSource(dataSource);
+		auth.authenticationProvider(authenticationProvider());
 	}
 
 	@Override
@@ -49,13 +47,14 @@ public class IMWebAppSecurityConfig extends WebSecurityConfigurerAdapter {
 		// setup authentication to login page and allow logout
 		// do not require authentication to resources
 		http.authorizeRequests()
-			.antMatchers("/resources/**").permitAll()
-			.antMatchers("/registration/**").permitAll()
+			.antMatchers("/css/**","/js/**","/img/**","/fonts/**","/registration/**").permitAll()
 			.anyRequest().authenticated()
 			.and()
 				.formLogin()
 				.loginPage("/login")
+				.failureUrl("/login-error")
 				.loginProcessingUrl("/authenticateUser")
+				.successHandler(successHandler)
 				.permitAll()
 			.and()
 				.logout()

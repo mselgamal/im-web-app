@@ -8,5 +8,6 @@ import com.im_web_app.user.ChatUser;
 public interface UserService extends UserDetailsService {
 	
 	public void save(ChatUser user);
-	public User find(String userName);
+	public User findByUserName(String username);
+	public User findByEmail(String email);
 }

@@ -35,10 +35,12 @@ public class UserServiceImpl implements UserService {
 	@Override
 	@Transactional
 	public UserDetails loadUserByUsername(String userName) throws UsernameNotFoundException {
-		User user = userDao.find(userName);
+		User user = userDao.findByUserName(userName);
+		
 		if (user == null) {
 			throw new UsernameNotFoundException("Invalid username or password.");
 		}
+		
 		return new org.springframework.security.core.userdetails.User(user.getUsername(), 
 				user.getPassword(), mapRolesToAuthorities(user.getRoles()));
 	}
@@ -53,7 +55,7 @@ public class UserServiceImpl implements UserService {
 	public void save(ChatUser chatUser) {
 		User user = new User();
 		user.setUsername(chatUser.getUserName());
-		user.setFirstName(chatUser.getUserName());
+		user.setFirstName(chatUser.getFirstName());
 		user.setLastName(chatUser.getLastName());
 		user.setPassword(passwordEncoder.encode(chatUser.getPassword()));
 		user.setEmail(chatUser.getEmail());
@@ -65,8 +67,14 @@ public class UserServiceImpl implements UserService {
 
 	@Override
 	@Transactional
-	public User find(String userName) {
-		return userDao.find(userName);
+	public User findByUserName(String userName) {
+		return userDao.findByUserName(userName);
 	}
 
+	@Override
+	public User findByEmail(String email) {
+		return userDao.findByEmail(email);
+	}
+	
+	
 }

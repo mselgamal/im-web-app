@@ -1,7 +1,8 @@
 package com.im_web_app.dao;
 
+import javax.persistence.EntityManager;
+
 import org.hibernate.Session;
-import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -12,11 +13,11 @@ import com.im_web_app.entity.Role;
 public class RoleDAOImpl implements RoleDAO {
 
 	@Autowired
-	private SessionFactory sessionFactory;
+	private EntityManager entityManager;
 
 	@Override
 	public Role find(String name) {
-		Session session = sessionFactory.getCurrentSession();
+		Session session = entityManager.unwrap(Session.class);
 		
 		Query<Role> query = session.createQuery("from Role where name=:uName", Role.class);
 		query.setParameter("uName", name);

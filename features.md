@@ -19,3 +19,13 @@ implementing each one till completion. Each feature is mean't to be completed in
 	- add sql files to create auth db user used by hibernate
 	- add sql files to create DB “chat_app”
 	- add sql files to create DB user table and roles table
+### imapp-201_create-login-page
+	- create html login page
+	- add authentication requirements
+	- add form validation
+### imapp-202_create-registration-page
+	- create html registration page
+	- add authentication requirements
+	- add form validation
+### imapp-203_user-settings-display-user-info
+	- on main page post login, user settings should display user info from DB

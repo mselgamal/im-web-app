@@ -28,6 +28,10 @@ CREATE TABLE `role` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
+INSERT INTO `role` (name)
+VALUES 
+('ROLE_USER'),('ROLE_ADMIN');
+
 --
 -- Table structure for table `users_roles`
 --

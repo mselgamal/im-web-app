@@ -1,17 +1,18 @@
-CREATE DATABASE  IF NOT EXISTS `chat_app`;
+DROP DATABASE if exists `chat_app`;
+CREATE DATABASE `chat_app`;
 USE `chat_app`;
 
 --
 -- Table structure for table `user`
 --
 
-REATE TABLE `user` (
+CREATE TABLE `user` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `username` varchar(50) NOT NULL,
+  `username` varchar(50) NOT NULL unique,
   `password` char(80) NOT NULL,
   `firstname` varchar(60) NOT NULL,
   `lastname` varchar(60) NOT NULL,
-  `email` varchar(50) NOT NULL,
+  `email` varchar(50) NOT NULL unique,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 

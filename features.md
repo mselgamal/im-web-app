@@ -29,5 +29,7 @@ implementing each one till completion. Each feature is mean't to be completed in
 	- add form validation
 ### imapp-203_display_new_user_message - in progress
 	- display message at login screen when redirected from user registration page
-### imapp-204_user-settings-display-user-info
+### imapp-204_assign_role_when_creating_new_user - in progress
+	- assign role when saving new user information to DB
+### imapp-205_user-settings-display-user-info
 	- on main page post login, user settings should display user info from DB
